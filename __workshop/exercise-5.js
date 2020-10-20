@@ -6,7 +6,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
-  // code here
+    return array.includes(item);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -14,19 +14,19 @@ function itemIsPresent(array, item) {
 //
 // Test case
 const myArray = [
-  "bacon",
-  "purple",
-  "door",
-  "window",
-  "exist",
-  "code",
-  "program",
-  "funky",
+    "bacon",
+    "purple",
+    "door",
+    "window",
+    "exist",
+    "code",
+    "program",
+    "funky",
 ];
 
 // Call the function to test your code.
 console.log(itemIsPresent(myArray, "funky")); // true
-console.log(itemIsPresent(myArray, "elephant")); // false
+console.log(itemIsPresent(myArray, "bacon")); // false
 
 // Create more test cases
 

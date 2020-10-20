@@ -13,12 +13,26 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
-  // grades is an array of numbers
+    // grades is an array of numbers
+    const numericalGrade =
+        grades.reduce(function(a, b) {
+            return a + b;
+        }) / grades.length;
+
+    let letterGrade = "A";
+
+    if (numericalGrade < 90) letterGrade = "B";
+    if (numericalGrade < 80) letterGrade = "C";
+    if (numericalGrade < 70) letterGrade = "D";
+    if (numericalGrade < 60) letterGrade = "F";
+
+    return letterGrade;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 // Call the function with [48, 95, 65, 48, 59, 78, 72, 65]
+console.log(getLetterGrade([48, 95, 65, 48, 59, 78, 72, 65]));
 
 // Create more test cases.
 

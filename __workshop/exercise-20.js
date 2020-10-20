@@ -15,14 +15,21 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function every(arr, func) {
-  // arr is an array and f is a function
-  // func takes 1 argument and returns a boolean
+    // arr is an array and f is a function
+    // func takes 1 argument and returns a boolean
+    let verification = true;
+    arr.forEach((item) => {
+        if (verification) {
+            verification = func(item);
+        }
+    });
+    return verification;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 function isEven(num) {
-  return num % 2 === 0;
+    return num % 2 === 0;
 }
 console.log(every([2, 42, 540, 8, 64], isEven));
 console.log(every([2, 42, 540, 3, 64], isEven));

@@ -13,7 +13,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function decodeMessage(string, notCode) {
-  // complete the function
+    // complete the function
+    let message = string;
+    for (let i = 0; i < notCode.length; i++) {
+        message = message.replace(notCode[i], "");
+    }
+    return message;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -24,19 +29,18 @@ function decodeMessage(string, notCode) {
 // Call the function to test your code.
 console.log(decodeMessage("I anotm tbaconhe walrus.", ["not", "bacon"]));
 console.log(
-  decodeMessage(
-    "summerlobaconokfamily ascaryt mintergalactice, I'jerrym Pimortybethckle Rick!",
-    [
-      "summer",
-      "bacon",
-      "scary",
-      "intergalactic",
-      "jerry",
-      "morty",
-      "beth",
-      "family",
-    ]
-  )
+    decodeMessage(
+        "summerlobaconokfamily ascaryt mintergalactice, I'jerrym Pimortybethckle Rick!", [
+            "summer",
+            "bacon",
+            "scary",
+            "intergalactic",
+            "jerry",
+            "morty",
+            "beth",
+            "family",
+        ]
+    )
 );
 // Create more test examples.
 

@@ -16,7 +16,16 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+    // complete the function
+    const arrOfNames = string.split(" ");
+    let firstOutput = arrOfNames[0];
+
+    if (arrOfNames.length > 1) {
+        return firstOutput + " " + arrOfNames[arrOfNames.length - 1]
+    } else return firstOutput;
+
+
+    // complete the function
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

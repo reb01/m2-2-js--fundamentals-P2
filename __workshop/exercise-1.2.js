@@ -10,7 +10,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function arrOFNames(string) {
-  // complete the function
+    var array = string.split(',');
+    return array;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -20,9 +21,9 @@ function arrOFNames(string) {
 
 // Call the function to test your code.
 console.log(
-  arrOFNames(
-    "Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Rick C-137"
-  )
+    arrOFNames(
+        "Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Rick C-137"
+    )
 );
 // Create more test examples.
 

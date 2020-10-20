@@ -6,13 +6,15 @@
 //
 // Edit only the code between the lines (below)
 function getMax(num1, num2) {
-  // your code here...
+    // your code here...
+    return num1 > num2 ? num1 : num2;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
 //
 //
+
 // Call the function to test your code.
 console.log(getMax(12, 43));
 

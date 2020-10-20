@@ -20,12 +20,18 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function map(arr, func) {
-  // arr is an array and func is a function
+    // arr is an array and func is a function
+    const newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArray.push(func(arr[i]));
+    }
+
+    return newArray;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 function charCount(str) {
-  return str.length;
+    return str.length;
 }
 
 console.log(map(["Robin", "Bob", "Ric", "Jim"], charCount));

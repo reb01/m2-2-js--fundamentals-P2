@@ -20,13 +20,30 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function findArmstrongNumbers(num1, num2) {
-  // num1 and num2 are Numbers
+    // num1 and num2 are Numbers
+    let armstrongNumbers = [];
+
+    for (let i = num1; i <= num2; i++) {
+        let digits = i.toString().split("");
+        let sum = 0;
+        digits.forEach(function(digit) {
+            let product = 1;
+            for (let x = 0; x < digits.length; x++) {
+                product *= digit;
+            }
+            sum += product;
+        });
+        if (sum === i) {
+            armstrongNumbers.push(i);
+        }
+    }
+
+    return armstrongNumbers;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(findArmstrongNumbers(0, 1000000));
-
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)

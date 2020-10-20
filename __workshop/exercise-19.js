@@ -15,16 +15,24 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function filter(arr, func) {
-  // arr is an array and f is a function
-  // func takes one argument and returns a boolean (true or false)
+    // arr is an array and f is a function
+    // func takes one argument and returns a boolean (true or false)
+    const newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (func(arr[i])) {
+            newArray.push(arr[i]);
+        }
+    }
+
+    return newArray;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(
-  filter(["Batman", "Superman", "Moe", "Flash"], function (x) {
-    return x.length > 5;
-  })
+    filter(["Batman", "Superman", "Moe", "Flash"], function(x) {
+        return x.length > 5;
+    })
 );
 
 // This is needed for automated testing (more on that later)

@@ -8,13 +8,17 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countChar(str, char) {
-  // str and char are both strings
+    // str and char are both strings
+    let count = 0;
+    str.split("").forEach(function(ltr) {
+        if (ltr === char) count += 1;
+    });
+    return count;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(countChar("BananaBabyBubbles", "a"));
-
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)

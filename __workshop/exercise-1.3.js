@@ -9,16 +9,21 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function characterCount(string) {
-  // complete the function
-}
-// -----------------------------------------------------------------
-// Edit only the code between the lines (above)
-//
-//
-//
+    return string.length;
+    // complete the function
 
+    // get the length of the string after removal
+
+    // -----------------------------------------------------------------
+    // Edit only the code between the lines (above)
+    //
+    //
+    //
+}
 // Call the function to test your code.
 console.log(characterCount("wubba lubba dub dub"));
+
+
 
 // Create more test examples.
 

@@ -9,7 +9,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greetLong(list) {
-  // list is an array of strings
+    arr1 = list.filter(word => word.length > 3);
+    return arr1.map(list => "Hello " + list);
+
+
+
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -20,3 +25,7 @@ console.log(greetLong(["Scott", "Bob", "Ric", "Jim"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = greetLong;
+
+
+
+}
